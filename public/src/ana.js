@@ -14,6 +14,7 @@ var context;
  *
  * @function newEvent
  * @param {Object} e - Information about the keyboard event.
+ * * @param {Object} e - Information about the keyboard event.
  */
 function newEvent(e) {
     // Only check for a return/enter press - Event 13
@@ -31,6 +32,7 @@ function newEvent(e) {
             displayMessage(text, user);
             userInput.value = '';
 
+            userMessage(text);
             userMessage(text);
 
         } else {
